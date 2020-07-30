@@ -4,16 +4,13 @@ import ReactDOM from "react-dom";
 
 // Class Component
 class App extends React.Component {
-	// Needs constructor method when declaring state within class component
-	constructor(props) {
-		super(props);
+	// Setting state to be empty upon loading
+	state = {
+		lat: null,
+		error: null,
+	};
 
-		// Setting state to be empty upon loading
-		this.state = {
-			lat: null,
-			error: null,
-		};
-
+	componentDidMount() {
 		// Retrieve user location to depend on season
 		window.navigator.geolocation.getCurrentPosition(
 			(position) => {
