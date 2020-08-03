@@ -8,4 +8,9 @@ const Loader = (props) => {
 	);
 };
 
+// Allow default props if none is passed into component
+Loader.defaultProps = {
+	message: "Loading...",
+};
+
 export default Loader;
