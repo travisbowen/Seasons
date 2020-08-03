@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This application takes in the user's location and determines if it is summer or winter where they are.
+
 ## Available Scripts
 
 In the project directory, you can run:
